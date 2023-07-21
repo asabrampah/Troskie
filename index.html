@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Troskie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Tros<span>kie</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">Facts & About Us</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Akwaaba <span style="color: yellow;">wòe zɔ</span></h1>
+                    <p>Welcome aboard, pal! Hop on the trotro to discover fares that won't "carry you kraa" – it's time to "jama" your way through Ghana's bustling streets!</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Find Your Travel Fare:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" id="currentLocation" placeholder="Enter your location name">
+                        <input type = "text" class = "form-control" id="destination" placeholder="Enter your destination name">
+                        <button type="submit" class="btn" >Get Fare</button>
+                        <input type="text" id="fare" name="fare" class = "form-control" placeholder="Price will be displayed here" readonly>
+                        <div id="messageContainer"></div>
+
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <!-- <span class = "sm-title">know about services that we offer</span> -->
+                    <h2 class = "lg-title" style="font-size: 50px;">Our services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-bus"></i>
+                        </span>
+                        <h3>Vrooom!</h3>
+                        <p class = "text">Troskie specializes in simplifying your daily commute with real-time trotro fares for Ghanaian citizens. Our user-friendly web application empowers you to effortlessly calculate fares from your location to any desired destination. Join us on a delightful trotro adventure and experience transparent, accessible, and stress-free travel across Ghana's vibrant streets and scenic locales. Welcome aboard the Troskie journey!</p>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">Never get stranded again! Troskie comes to the rescue by providing real-time trotro fares, ensuring you'll never be caught without the exact amount. Say goodbye to scrambling for change or negotiating fares. While we strive to offer precise prices whenever possible, our app is designed to provide a reasonable fare range, allowing you to plan your journey with confidence. Embrace the convenience, bid farewell to uncertainties, and let Troskie be your trusty companion on every commuting adventure!</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- end of services section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item" >
+                    <a href = "index.html" class = "site-brand">
+                        Tros<span>kie</span>
+                    </a>
+                    <p class = "text" style="text-align: justify;">Find accurate and up-to-date transport fares with Troskie Fare Finder. We are dedicated to providing you with real-time fare information for your travel needs. Say goodbye to uncertainty and enjoy transparency in fare pricing. Plan your journey and budget effectively with Troskie Fare Finder today!</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Any suggestions for us, feel free to contact us</h2>
+                    <ul>
+                        <li><a href = "contact.html">Contact Us</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+    </body>
+</html>
