@@ -173,13 +173,13 @@
         // Hardcode the fares for two instances
         let fare = null;
         if ((currentLocation === "Kasoa" && destination === "Madina") || (currentLocation === "Accra" && destination === "Kumasi")) {
-            fare = 15;
+            fare = 15.00 ;
         } else if ((currentLocation === "Dansoman" && destination === "Legon") || (currentLocation === "Cape Coast" && destination === "Tema")) {
-            fare = 11 + "cedis";
+            fare = 11.00;
         }
 
         // Display the fare in the input box
-        fareInput.value = fare  !== null ? `$${fare}` : 'Fare not available';
+        fareInput.value = fare  !== null ? `₵${fare}` : 'Fare not available';
     }
         </script>
         <script src = "js/script.js"></script>
