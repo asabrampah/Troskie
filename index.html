@@ -61,9 +61,9 @@
                 <div class = "header-form">
                     <h2>Find Your Travel Fare:</h2>
                     <form class = "flex">
-                        <input type = "text" class = "form-control" id="currentLocation" placeholder="Enter your location name">
-                        <input type = "text" class = "form-control" id="destination" placeholder="Enter your destination name">
-                        <button type="submit" class="btn" >Get Fare</button>
+                        <input type = "text" class = "form-control" id="currentLocation" placeholder="Enter your location name" required>
+                        <input type = "text" class = "form-control" id="destination" placeholder="Enter your destination name" required>
+                        <input type="button" class="btn" value="Get Fare" onclick="fetchFare()"/>
                         <input type="text" id="fare" name="fare" class = "form-control" placeholder="Price will be displayed here" readonly>
                         <div id="messageContainer"></div>
 
@@ -164,6 +164,24 @@
         <!-- end of footer -->
 
         <!-- js -->
+        <script>
+        function fetchFare() {
+        const currentLocation = document.getElementById('currentLocation').value;
+        const destination = document.getElementById('destination').value;
+        const fareInput = document.getElementById('fare');
+
+        // Hardcode the fares for two instances
+        let fare = null;
+        if ((currentLocation === "Kasoa" && destination === "Madina") || (currentLocation === "Accra" && destination === "Kumasi")) {
+            fare = 15;
+        } else if ((currentLocation === "Dansoman" && destination === "Legon") || (currentLocation === "Cape Coast" && destination === "Tema")) {
+            fare = 11 + "cedis";
+        }
+
+        // Display the fare in the input box
+        fareInput.value = fare  !== null ? `$${fare}` : 'Fare not available';
+    }
+        </script>
         <script src = "js/script.js"></script>
     </body>
 </html>
