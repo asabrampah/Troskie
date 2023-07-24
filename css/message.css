@@ -1,0 +1,11 @@
+.success-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #00cc00; /* Green background color */
+  color: #ffffff; /* White text color */
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

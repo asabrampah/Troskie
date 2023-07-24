@@ -16,6 +16,7 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+        <link rel="stylesheet" href="css/message.css">
         
     </head>
     <body>
@@ -75,12 +76,12 @@
 
                 <div class = "contact-row">
                     <div class = "contact-left">
-                        <form class = "contact-form" action="contact.php" method="post">
+                        <form class = "contact-form" id="contactForm">
                             <input type = "text" class = "form-control" id="name" placeholder="Enter your name" required>
                             <input type = "email" class = "form-control" id="email" placeholder="Enter your email" required>
                             <span id="email-error" style="color: red;"></span>
                             <textarea rows = "4" class = "form-control" id="message" placeholder="Type your message" style = "resize: none;"></textarea>
-                            <button type = "submit" class = "btn" id="contact-submit" data-submit="...Sending" >Send message</button>
+                            <button type = "submit" class = "btn" id="sendButton" data-submit="...Sending" onclick="displaySuccessMessage()">Send message</button>
                         </form>
                     </div>
                     <div class = "contact-right my-2">
@@ -178,6 +179,7 @@
     </footer>
     <!-- end of footer -->
 
+
         <!-- js -->
         <script src = "js/script.js"></script>
         <script>
@@ -194,6 +196,13 @@
                 emailError.textContent = '';
               }
             });
+            
+            function displaySuccessMessage() {
+                // Display the success message
+                alert("Message sent successfully!");
+            }
+</script>
+
           </script>
     </body>
 </html>
